@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { NgStyle } from '@angular/common';
-import { ColumnMode } from 'projects/swimlane/ngx-datatable/src/public-api';
+import { ColumnMode } from 'projects/scys/ngx-datatable/src/public-api';
 
 @Component({
   selector: 'row-grouping-demo',
@@ -10,7 +10,7 @@ import { ColumnMode } from 'projects/swimlane/ngx-datatable/src/public-api';
         Row Grouping
         <small>
           <a
-            href="https://github.com/swimlane/ngx-datatable/blob/master/src/app/basic/row-grouping.component.ts"
+            href="https://github.com/https://github.com/scys//ngx-datatable/blob/master/src/app/basic/row-grouping.component.ts"
             target="_blank"
           >
             Source
@@ -227,13 +227,15 @@ export class RowGroupingComponent {
 
       // check if can set the group status
       const numberOfExpPayYes = group.filter(rowFilter => rowFilter.exppayyes === 1).length;
-      const numberOfSourceFunder = group.filter(rowFilter => rowFilter.exppayyes === 1 && rowFilter.source === 'Funder')
-        .length;
+      const numberOfSourceFunder = group.filter(
+        rowFilter => rowFilter.exppayyes === 1 && rowFilter.source === 'Funder'
+      ).length;
       const numberOfSourceCalculated = group.filter(
         rowFilter => rowFilter.exppayyes === 1 && rowFilter.source === 'Calculated'
       ).length;
-      const numberOfSourceManual = group.filter(rowFilter => rowFilter.exppayyes === 1 && rowFilter.source === 'Manual')
-        .length;
+      const numberOfSourceManual = group.filter(
+        rowFilter => rowFilter.exppayyes === 1 && rowFilter.source === 'Manual'
+      ).length;
 
       console.log('numberOfExpPayYes', numberOfExpPayYes);
       console.log('numberOfSourceFunder', numberOfSourceFunder);

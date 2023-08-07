@@ -6,7 +6,7 @@ in your application module like:
 ```javascript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { NgxDatatableModule } from '@scys/ngx-datatable';
 
 import { AppComponent } from './app.component';
 
@@ -33,7 +33,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   rows = [
-    { name: 'Austin', gender: 'Male', company: 'Swimlane' },
+    { name: 'Austin', gender: 'Male', company: 'SCys' },
     { name: 'Dany', gender: 'Male', company: 'KFC' },
     { name: 'Molly', gender: 'Female', company: 'Burger King' }
   ];
@@ -44,5 +44,5 @@ export class AppComponent {
 and you're off to the races!
 
 For more examples, visit the
-[demos](https://github.com/swimlane/angular2-data-table/tree/master/demo) directory
+[demos](https://github.com/scys/angular2-data-table/tree/master/demo) directory
 in the source code!

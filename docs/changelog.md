@@ -1,5 +1,10 @@
 # Changelog
 
+## 21.0.0
+
+- Forked: support column footer template
+- Support: Angular 16
+
 ## 20.1.0
 
 - Chore: Support for angular 13+
