@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:lib:prod": "ng build scys/ngx-datatable --configuration production",
+    "build:lib:prod": "ng build @scys/ngx-datatable --configuration production",
     "copy-files": "cp README.md dist/scys/ngx-datatable/README.md && cp LICENSE dist/scys/ngx-datatable/LICENSE && cpx \"src/assets/**/*\" \"dist/scys/ngx-datatable/assets\" && cpx \"projects/scys/ngx-datatable/src/lib/themes/**/*\" \"dist/scys/ngx-datatable/themes\"",
     "build:css": "scss-bundle  -c ./scss-bundle.config.json && node-sass -o dist/scys/ngx-datatable/themes dist/scys/ngx-datatable/themes && node-sass -o dist/scys/ngx-datatable dist/scys/ngx-datatable",
     "test": "run-p lint test:unit",
@@ -47,7 +47,6 @@
     "@angular/cli": "~13.1.2",
     "@angular/compiler-cli": "^13.1.1",
     "@angular/language-service": "^13.1.1",
-    "@scys/prettier-config-scys": "^3.0.2",
     "@types/jasmine": "^3.6.11",
     "@types/jasminewd2": "^2.0.10",
     "@types/node": "^12.20.27",
@@ -75,7 +74,6 @@
     "tslint": "~6.1.0",
     "tslint-config-prettier": "^1.17.0",
     "tslint-config-security": "^1.16.0",
-    "tslint-config-scys": "^5.0.0",
     "typescript": "~4.5.4"
   },
   "husky": {
